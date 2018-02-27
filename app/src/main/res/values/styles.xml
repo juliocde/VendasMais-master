@@ -1,0 +1,90 @@
+<resources>
+
+    <style name="AppTheme.Base" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColorPrimary">@color/colorTextPrimary</item>
+        <item name="android:textColorSecondary">@color/colorTextSecondary</item>
+        <item name="android:dropDownListViewStyle">@style/Widget.Spinner.DropDown.ListView</item>
+        <item name="vpiCirclePageIndicatorStyle">@style/CustomCirclePageIndicator</item>
+    </style>
+
+    <style name="AppTheme" parent="AppTheme.Base">
+    </style>
+
+    <style name="AppThemeLogin" parent="AppTheme.Base">
+    </style>
+
+    <style name="AppThemeSplashScreen" parent="AppTheme.Base">
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppThemeSplashScreen.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowBackground">@drawable/background_splashscreen</item>
+    </style>
+
+    <style name="AppThemeLogin.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowBackground">@mipmap/bg2</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="Widget.Spinner.DropDown.ListView" parent="Widget.AppCompat.ListView.DropDown">
+        <item name="android:paddingLeft">16dp</item>
+    </style>
+
+    <style name="Widget.Spinner.Underlined" parent="Widget.AppCompat.Spinner.Underlined">
+        <item name="colorControlNormal">@color/lineColor</item>
+    </style>
+
+    <style name="CustomEditText">
+        <item name="android:textColor">@color/white_80</item>
+        <item name="colorControlNormal">@color/white_80</item>
+        <item name="colorControlActivated">@color/white_80</item>
+        <item name="android:editTextColor">@color/white_80</item>
+        <item name="android:textColorHint">@color/white_80</item>
+    </style>
+
+    <style name="CustomCirclePageIndicator">
+        <item name="fillColor">@color/colorDivider</item>
+        <item name="strokeColor">@color/colorDivider</item>
+        <item name="pageColor">@color/backgroundColor</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="radius">4dp</item>
+    </style>
+
+
+</resources>
+
+
+<!--
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    </style>
+
+    <style name="AppTheme.Base" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+</resources>
+ -->

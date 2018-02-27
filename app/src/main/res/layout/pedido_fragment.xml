@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="br.com.dsx.vendamais.fragment.PedidoFragment"
+    android:background="@android:color/white"
+    >
+
+
+    <data>
+        <variable name="pedido" type="br.com.dsx.vendamais.domain.Pedido" />
+    </data>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+            >
+
+            <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:gravity="end"
+                 android:orientation="horizontal"
+                 >
+
+                 <ImageView
+                     android:id="@+id/imageView2"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:gravity="end"
+                     android:padding="8dp"
+                     android:tint="@color/colorDivider"
+                     app:srcCompat="@drawable/ic_data_pedido"
+                     />
+
+                 <br.com.dsx.vendamais.component.MaskEditText
+                     android:id="@+id/pedidoData"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:paddingRight="16dp"
+                     android:focusable="false"
+                     android:text="xx/xx/xxxx"
+                     android:gravity="bottom"
+                     app:met_hideUnderline="true"
+                     />
+             </LinearLayout>
+
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent">
+
+                         <!--  This is the main content -->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="15dp"
+                    android:background="@drawable/frame"
+                    android:orientation="vertical"
+                    android:paddingTop="15dp"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        >
+
+                        <br.com.dsx.vendamais.component.MaskEditText
+                            android:id="@+id/pedidoEmpresaNome"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:met_floatingLabel="highlight"
+                            android:focusable="false"
+                            android:imeOptions="actionNext"
+                            android:layout_marginRight="16dp"
+                            android:layout_marginLeft="16dp"
+                            android:hint="@string/empresa_hint"
+                            android:textSize="@dimen/text_size"
+                            android:gravity="bottom"
+                            />
+
+                        <br.com.dsx.vendamais.component.MaskEditText
+                            android:id="@+id/pedidoLocalEstoque"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:met_floatingLabel="highlight"
+                            android:focusable="false"
+                            android:imeOptions="actionNext"
+                            android:layout_marginRight="16dp"
+                            android:layout_marginLeft="16dp"
+                            android:hint="@string/localEstoque_hint"
+                            android:textSize="@dimen/text_size"
+                            android:gravity="bottom"
+                            />
+
+                        <br.com.dsx.vendamais.component.MaskEditText
+                            android:id="@+id/pedidoClienteNome"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:met_floatingLabel="highlight"
+                            android:focusable="false"
+                            android:imeOptions="actionNext"
+                            android:layout_marginRight="16dp"
+                            android:layout_marginLeft="16dp"
+                            android:hint="@string/cliente_hint"
+                            android:textSize="@dimen/text_size"
+                            android:gravity="bottom"
+                            />
+
+                        <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                            android:id="@+id/pedidoTop"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginLeft="16dp"
+                            android:focusable="false"
+                            android:textSize="@dimen/text_size"
+                            android:gravity="bottom"
+                            android:hint="@string/tipoOperacao_hint"
+                            app:met_floatingLabel="normal"
+                            />
+
+                        <br.com.dsx.vendamais.component.MaskEditText
+                            android:id="@+id/pedidoFrmPgDescricao"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:met_floatingLabel="highlight"
+                            android:focusable="false"
+                            android:imeOptions="actionNext"
+                            android:layout_marginRight="16dp"
+                            android:layout_marginLeft="16dp"
+                            android:textSize="@dimen/text_size"
+                            android:gravity="bottom"
+                            android:hint="@string/formaPagamento_hint"
+                            android:layout_marginBottom="8dp"
+                            />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="30dp"
+                    android:orientation="horizontal" >
+                    >
+                    <ImageView
+                        android:id="@+id/icon_pedidos"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="end"
+                        android:paddingTop="1dp"
+                        android:paddingLeft="2dp"
+                        android:tint="@color/colorDivider"
+                        android:background="@android:color/white"
+                        app:srcCompat="@drawable/ic_pedido_identificacao" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/white"
+                        android:paddingTop="4dp"
+                        android:paddingRight="2dp"
+                        android:paddingBottom="2dp"
+                        android:text=" Identificação "
+                        />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <!--  This is the main content -->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="15dp"
+                    android:background="@drawable/frame"
+                    android:orientation="vertical"
+                    android:paddingTop="15dp"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        >
+                        <br.com.dsx.vendamais.component.MaskEditText
+                            android:id="@+id/selecionarProdutos"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:focusable="false"
+                            android:imeOptions="actionNext"
+                            android:layout_marginRight="16dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginBottom="2dp"
+                            app:met_floatingLabel="highlight"
+                            android:hint="Adicionar itens:"
+                            />
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/itemPedidoListRecyclerView"
+                            android:name="br.com.dsx.vendamais.fragment.ItemPedidoFragmentList"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:overScrollMode="never"
+                            app:layoutManager="LinearLayoutManager"
+                            tools:context="br.com.dsx.vendamais.fragment.ItemPedidoFragmentList"
+                            tools:listitem="@layout/item_pedido_fragment_row"
+                            />
+
+                        <br.com.dsx.vendamais.component.MaskEditText
+                            android:id="@+id/totalItemPedido"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:focusable="false"
+                            android:gravity="end"
+                            android:layout_gravity="center"
+                            android:imeOptions="actionNext"
+                            app:met_floatingLabel="highlight"
+                            app:met_hideUnderline="true"
+                            android:paddingRight="16dp"
+                            />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="30dp"
+                    android:orientation="horizontal" >
+                    >
+                    <ImageView
+                        android:id="@+id/icon_produtos"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="end"
+                        android:paddingTop="1dp"
+                        android:paddingLeft="2dp"
+                        android:tint="@color/colorDivider"
+                        android:background="@android:color/white"
+                        app:srcCompat="@drawable/ic_nav_produtos" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/white"
+                        android:paddingTop="4dp"
+                        android:paddingRight="2dp"
+                        android:paddingBottom="2dp"
+                        android:text=" Produtos "
+                        />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginBottom="4dp"
+                >
+                <ImageView
+                    android:id="@+id/icon_obs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="16dp"
+                    android:tint="@color/colorDivider"
+                    app:srcCompat="@drawable/ic_obs"
+                    />
+                <br.com.dsx.vendamais.component.MaskEditText
+                    android:id="@+id/pedidoObservacao"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:imeOptions="actionDone"
+                    android:textSize="@dimen/text_size"
+                    android:layout_marginRight="16dp"
+                    android:paddingLeft="10dp"
+                    android:hint="@string/observacao_hint"
+                    app:met_floatingLabel="highlight"
+                    android:gravity="bottom"
+                    app:met_clearButton="@bool/default_circle_indicator_centered"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</layout>

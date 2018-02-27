@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorPrimaryLight">#C5CAE9</color>
+    <color name="colorPrimaryText">#FFFFFF</color>
+    <color name="colorAccent">#FF3F80</color>
+    <color name="colorTextPrimary">#434463</color>
+    <color name="colorTextSecondary">#757575</color>
+    <color name="colorDivider">#BDBDBD</color>
+
+    <color name="backgroundColor">#FFFFFF</color>
+    <color name="lineColor">#e0e0e0</color>
+    <color name="white_80">#80ffffff</color>
+
+    <color name="colorError">#90FF0000</color>
+    <color name="colorBusiness">#70FF0000</color>
+
+    <color name="colorAccent2">#536DFE</color>
+
+
+    <!-- color name="colorPrimary">#3f51b5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="backgroundColor">#FFFFFF</color>
+    <color name="circleColor">#B0BEC5</color -->
+
+
+    <color name="edittext_floating">#B0BEC5</color>
+
+    <color name="text_disable">#75000000</color>
+    <color name="text_enable">#434463</color>
+
+    <color name="icone">#75000000</color>
+
+    <color name="circleBlue">#5169F7</color>
+
+
+
+</resources>
+

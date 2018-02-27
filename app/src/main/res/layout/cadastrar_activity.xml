@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg2"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        >
+
+
+        <TextView
+            android:id="@+id/labelCadastro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="64dp"
+            android:layout_marginBottom="32dp"
+            android:text="Preencha os dados abaixo: "
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:visibility="gone"
+            />
+
+        <RelativeLayout
+            android:id="@+id/formCadastro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:visibility="gone"
+            >
+
+            <LinearLayout
+                android:id="@+id/formLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tela_cadastro"
+                android:orientation="vertical">
+
+                <br.com.dsx.vendamais.component.MaskEditText
+                    android:id="@+id/nomeUsuario"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="28dp"
+                    android:layout_marginRight="28dp"
+                    android:inputType="textPersonName"
+                    android:hint="Nome:"
+                    android:imeOptions="actionNext"
+                    app:met_floatingLabel="highlight"/>
+
+                <br.com.dsx.vendamais.component.MaskEditText
+                    android:id="@+id/emailUsuario"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="28dp"
+                    android:layout_marginRight="28dp"
+                    android:inputType="textEmailAddress"
+                    android:hint="Email:"
+                    android:imeOptions="actionNext"
+                    app:met_floatingLabel="highlight"/>
+
+                <br.com.dsx.vendamais.component.MaskEditText
+                    android:id="@+id/senhaUsuario"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="28dp"
+                    android:layout_marginRight="28dp"
+                    android:inputType="textPassword"
+                    android:hint="Senha:"
+                    android:imeOptions="actionNext"
+                    app:met_floatingLabel="highlight"
+                    />
+
+                <br.com.dsx.vendamais.component.MaskEditText
+                    android:id="@+id/senha2Usuario"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="28dp"
+                    android:layout_marginRight="28dp"
+                    android:layout_marginBottom="24dp"
+                    android:inputType="textPassword"
+                    android:hint="Confirmar senha:"
+                    android:imeOptions="actionSend"
+                    app:met_floatingLabel="highlight"
+                    />
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/sendButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-22dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/formLayout"
+                android:tint="@color/colorDivider"
+                android:background="@drawable/circle_button_blue"
+                app:srcCompat="@drawable/ic_send"
+                />
+
+        </RelativeLayout>
+
+
+
+        <TextView
+            android:id="@+id/labelCodigo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="64dp"
+            android:text="Informe o código enviado para seu email: "
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:visibility="visible"
+            />
+
+
+        <RelativeLayout
+            android:id="@+id/formCodigo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:visibility="visible"
+            >
+
+            <LinearLayout
+                android:id="@+id/codigoLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tela_verificacao"
+                android:orientation="vertical">
+
+                <br.com.dsx.vendamais.component.MaskEditText
+                    android:id="@+id/codigoVerificacao"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="28dp"
+                    android:layout_marginRight="28dp"
+                    android:layout_marginBottom="24dp"
+                    android:inputType="textPersonName"
+                    android:hint="Código de verificação:"
+                    android:imeOptions="actionSend"
+                    app:met_floatingLabel="highlight"/>
+
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/codigoButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="-22dp"
+                android:layout_below="@+id/codigoLayout"
+                android:tint="@color/colorDivider"
+                android:background="@drawable/circle_button_blue"
+                app:srcCompat="@drawable/ic_ok"
+                />
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+</ScrollView>

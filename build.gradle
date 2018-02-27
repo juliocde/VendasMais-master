@@ -1,0 +1,55 @@
+buildscript {
+    repositories {
+        maven { url "http://dl.bintray.com/populov/maven" }
+        jcenter()
+        mavenCentral()
+        google()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.0.1'
+        classpath 'org.greenrobot:greendao-gradle-plugin:3.2.2'
+    }
+}
+
+allprojects {
+    repositories {
+        maven { url "http://dl.bintray.com/populov/maven" }
+        jcenter()
+        mavenCentral()
+        google()
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+// Definição de dependências de forma centralizada
+ext {
+    // Sdk and tools
+    minSdkVersion = 17
+    targetSdkVersion = 25
+    compileSdkVersion = 25
+    buildToolsVersion = '25.0.2'
+
+    // App dependencies
+    supportLibraryVersion = '25.1.0'
+    gsonVersion = '2.8.0'
+    calligraphyVersion = '2.2.0'
+
+    rx2AndroidNetworking = '0.0.1'
+
+    dagger2Version = '2.8'
+    rxjava2Version = '2.0.5'
+    rxandroidVersion = '2.0.1'
+    butterKnifeVersion = '8.6.0'
+    greenDaoVersion = '3.2.2'
+    placeholderviewVersion = '0.6.1'
+    debugDBVersion = '1.0.0'
+    timberVersion = '4.5.1'
+
+    //Test dependencies
+    junitVersion = '4.12'
+    espressoVersion = '2.2.2'
+    mockitoVersion = '2.7.1'
+}

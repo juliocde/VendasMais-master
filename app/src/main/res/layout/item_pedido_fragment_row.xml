@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <android.support.v7.widget.GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:orientation="horizontal"
+        app:columnCount="4"
+        app:rowCount="5"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="start"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="6dp"
+            app:layout_rowSpan="3"
+            >
+            <ImageView
+                android:id="@+id/produtoFotoCardView"
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:contentDescription="Foto do Produto"
+                android:scaleType="fitCenter" />
+
+            <LinearLayout
+                android:id="@+id/produtoAddRemoveItem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:gravity="center_vertical|center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/icon_remove_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleX="1.5"
+                    android:scaleY="1.5"
+                    android:paddingLeft="1dp"
+                    android:tint="@color/lineColor"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/ic_remove_item_pedido"
+                    />
+                <EditText
+                    android:id="@+id/produtoQtdCardView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:inputType="numberDecimal"
+                    android:layout_marginRight="3dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginBottom="1dp"
+                    android:layout_weight="1"
+                    android:text="0"
+                    android:imeOptions="actionDone"
+                    android:textSize="14sp"
+                    />
+                <ImageView
+                    android:id="@+id/icon_add_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleX="1.5"
+                    android:scaleY="1.5"
+                    android:paddingRight="1dp"
+                    android:tint="@color/lineColor"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/ic_add_item_pedido"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="6dp"
+            android:paddingRight="5dp"
+            android:orientation="horizontal"
+            app:layout_columnSpan="3"
+            app:layout_rowWeight="10"
+            app:layout_gravity="fill_horizontal"
+            >
+
+            <TextView
+                android:id="@+id/produtoDescricaoCardView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Descricao bem grande de um produto para ver o que acontece."
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/itemMenuCardView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:tint="@color/colorDivider"
+                app:srcCompat="@drawable/ic_opcoes"
+                />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/produtoEstoqueCardView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Estoque: XX"
+            android:textSize="14sp"
+            app:layout_gravity="fill_horizontal|bottom"
+            app:layout_columnSpan="3"
+            android:layout_marginBottom="8dp"
+            />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal"
+            app:layout_columnSpan="3"
+            app:layout_gravity="fill_horizontal|bottom"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" x "
+                android:gravity="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp"
+                android:layout_weight="1"
+                />
+
+            <TextView
+                android:id="@+id/produtoPrecoCardView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10,00"
+                android:paddingBottom="5dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="14sp"
+                android:layout_weight="1"
+                android:gravity="center"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" = "
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp"
+                android:layout_weight="1"
+                android:gravity="center"
+                />
+
+            <TextView
+                android:id="@+id/produtoSubtotalCardView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="100,00"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="14sp"
+                android:layout_weight="1"
+                android:gravity="center"
+                />
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-6dp"
+            android:paddingRight="5dp"
+            android:orientation="horizontal"
+            app:layout_columnSpan="4"
+            app:layout_gravity="fill_horizontal"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Desc.(%): "
+                android:textSize="14sp"
+                android:gravity="right"
+                android:layout_weight="1"
+                />
+
+            <EditText
+                android:id="@+id/descontoPorcent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:maxLength="5"
+                android:inputType="numberDecimal"
+                android:layout_marginRight="3dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginBottom="1dp"
+                android:text="0"
+                android:imeOptions="actionDone"
+                android:textSize="14sp"
+                android:layout_weight="1"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Desc.($): "
+                android:textSize="14sp"
+                android:layout_weight="1"
+                android:gravity="right"
+                />
+
+            <EditText
+                android:id="@+id/descontoValor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:maxLength="5"
+                android:inputType="numberDecimal"
+                android:digits="0123456789.,"
+                android:layout_marginRight="8dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginBottom="1dp"
+                android:text="0"
+                android:imeOptions="actionDone"
+                android:textSize="14sp"
+                android:layout_weight="1"
+                />
+
+            </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total item: "
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="15sp"
+            app:layout_columnWeight="1"
+            app:layout_columnSpan="3"
+            android:gravity="right"
+            app:layout_gravity="fill_horizontal"
+            />
+
+        <TextView
+            android:id="@+id/totalCardView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="100,00"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="15sp"
+            android:layout_marginBottom="4dp"
+            android:layout_marginRight="16dp"
+            app:layout_gravity="right"
+            />
+
+
+    </android.support.v7.widget.GridLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/lineColor"/>
+</LinearLayout>

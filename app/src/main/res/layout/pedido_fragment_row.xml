@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        app:cardCornerRadius="2dp"
+        app:cardUseCompatPadding="true"
+        app:cardElevation="2dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="4dp"
+            >
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginRight="2dp"
+                android:paddingLeft="4dp"
+                android:paddingRight="8dp"
+                >
+                <TextView
+                    android:id="@+id/pedidoDia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:paddingRight="4dp"
+                    android:textSize="28dp"
+                    android:text="22"
+                    />
+                <TextView
+                    android:id="@+id/pedidoMes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:paddingRight="4dp"
+                    android:textSize="16sp"
+                    android:text="FEV"
+                    android:paddingTop="27dp"
+                    />
+                <TextView
+                    android:id="@+id/pedidoAno"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="2017"
+                    android:paddingRight="4dp"
+                    android:paddingTop="43dp"
+                    />
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="start"
+                android:paddingLeft="4dp"
+                >
+                <TextView
+                    android:id="@+id/pedidoNomeCliente"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="NOME DE UM CLIENTE GRANDE"
+                    android:textSize="16sp"
+                    android:paddingBottom="4dp"
+                    />
+                <GridLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:columnCount="2"
+                    android:rowCount="2" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="start"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginBottom="4dp"
+                        >
+                        <TextView
+                            android:id="@+id/pedidoValorTotalLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12sp"
+                            android:text="TOTAL"
+                            />
+                        <TextView
+                            android:id="@+id/pedidoValorTotalValue"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12sp"
+                            android:text="R$ 68,86"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="start"
+                        >
+                        <TextView
+                            android:id="@+id/pedidoNumeroUnicoLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12sp"
+                            android:text="N. Único"
+                            />
+                        <TextView
+                            android:id="@+id/pedidoNumeroUnicoValue"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12sp"
+                            android:text="1234567"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:layout_marginRight="16dp"
+                        >
+                        <ImageView
+                            android:id="@+id/pedidoQtdIcon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:tint="@color/lineColor"
+                            android:paddingRight="4dp"
+                            android:background="@android:color/white"
+                            app:srcCompat="@drawable/ic_nav_produtos" />
+                        <TextView
+                            android:id="@+id/pedidoQtdValue"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12sp"
+                            android:text="X PRODUTOS(S)"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        >
+                        <ImageView
+                            android:id="@+id/pedidoNaoEnviado"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:tint="@color/lineColor"
+                            android:paddingRight="4dp"
+                            android:background="@android:color/white"
+                            app:srcCompat="@drawable/ic_pedido_nao_enviado" />
+
+                        <ImageView
+                            android:id="@+id/pedidoEnviado"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:tint="@color/lineColor"
+                            android:visibility="gone"
+                            android:paddingRight="4dp"
+                            android:background="@android:color/white"
+                            app:srcCompat="@drawable/ic_pedido_envidado" />
+
+                        <TextView
+                            android:id="@+id/pedidoStatusValue"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12sp"
+                            android:text="NÃO ENVIADO"
+                            />
+                    </LinearLayout>
+
+                </GridLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

@@ -1,0 +1,104 @@
+<resources>
+    <string name="app_name">Ação Social</string>
+    <string name="navigation_drawer_open">Open</string>
+    <string name="navigation_drawer_close">Close</string>
+    <string name="album_name">CameraSample</string>
+    <string name="action_remover">Remover</string>
+    <string name="action_salvar">Salvar</string>
+    <string name="action_selecionar">Selecionar</string>
+    <string name="actionNovoPedido">Novo Pedido</string>
+
+    <string name="message_permission_rationale">This permission is required for continuing</string>
+    <string name="msg_negado">Negado</string>
+    <string name="msg_permitido">Permitido</string>
+
+    <string name="pedidos">Pedidos</string>
+    <string name="produtos">Produtos</string>
+    <string name="clientes">Clientes</string>
+    <string name="sincronizar">Sincronizar</string>
+    <string name="ferramentas">Ferramentas</string>
+    <string name="configurar">Configurar</string>
+    <string name="sair">Sair</string>
+
+    <!-- BARRA DE MENU  -->
+    <string name="pesquisar">Pesquisar</string>
+
+    <string name="facebook_app_id">1706598996024228</string>
+    <string name="fb_login_protocol_scheme">fb1706598996024228</string>
+
+    <!-- CADASTRO DE CLIENTES -->
+    <string name="tipo_pessoa">Tipo Pessoa:</string>
+    <string name="nome_fantasia">Nome Fantasia:</string>
+    <string name="razao_social">Razão Social:</string>
+    <string name="nome">Nome:</string>
+    <string name="cnpj">CNPJ:</string>
+    <string name="cpf">CPF:</string>
+    <string name="email">E-mail:</string>
+    <string name="celular">Celular:</string>
+    <string-array name="tipo_pessoa">
+        <item>PESSOA JURÍDICA</item>
+        <item>PESSOA FÍSICA</item>
+    </string-array>
+    <string-array name="tipo_logradouro">
+        <item>AV</item>
+        <item>BECO</item>
+        <item>PRACA</item>
+        <item>ROD</item>
+        <item>RUA</item>
+    </string-array>
+    <string name="cliente_salvo">Cliente salvo!</string>
+    <string name="pedido_salvo">Pedido salvo!</string>
+    <string name="configuracao_salvo">Configuração salva!</string>
+
+    <string name="formaPagamento_hint"><font size="18">Forma de Pagamento:</font></string>
+    <string name="cliente_hint"><font size="18">Cliente:</font></string>
+    <string name="empresa_hint"><font size="18">Empresa:</font></string>
+    <string name="tipoOperacao_hint"><font size="18">Tipo de Operação:</font></string>
+    <string name="localEstoque_hint"><font size="18">Local de Estoque:</font></string>
+    <string name="observacao_hint"><font size="18">Observação:</font></string>
+
+
+    <!-- SINCRONIZAÇÃO -->
+    <!--
+    ***Ceitel PRODUÇÃO***
+    http://179.184.219.18:8280/mge/
+    SUP
+    020819
+
+    ***Ceitel BASE TESTE***
+    http://179.184.243.198:8180/mge/
+    SUP
+    020819
+
+    <string name="usuarioSankhya">SUP</string>
+    <string name="senhaSankhya">020819</string>
+    <string name="urlSankhya">http://179.184.243.198:8180/</string>
+-->
+    <string name="urlDEMO">http://demo.dsxconsultoria.com.br:8180/</string>
+
+    <string name="urlDSX">http://sistema.dsxconsultoria.com.br:8380/</string>
+    <string name="usuarioDSX">APLICATIVO</string>
+    <string name="senhaDSX">vendamais1</string>
+
+    <!-- CADASTRO DE PRODUTOS -->
+    <string name="produto_salvo">Produto salvo!</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+
+</resources>
+

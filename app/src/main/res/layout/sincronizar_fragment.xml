@@ -1,0 +1,210 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="br.com.dsx.vendamais.fragment.SincronizarFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            >
+            <LinearLayout
+                android:id="@+id/enviarLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="65dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/imgEnviar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:scaleX="1.8"
+                    android:scaleY="1.8"
+                    android:layout_weight="1"
+                    android:tint="@color/colorDivider"
+                    app:srcCompat="@drawable/ic_enviar" />
+                <TextView
+                    android:id="@+id/txtEnviar"
+                    android:text="Enviar"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="-2dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/baixarLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="65dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/imgBaixar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:scaleX="1.8"
+                    android:scaleY="1.8"
+                    android:layout_weight="1"
+                    android:tint="@color/colorDivider"
+                    app:srcCompat="@drawable/ic_baixar" />
+                <TextView
+                    android:id="@+id/txtBaixar"
+                    android:text="Baixar"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="-2dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/apagarLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="65dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/imgApagar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:scaleX="1.7"
+                    android:scaleY="1.7"
+                    android:layout_weight="1"
+                    android:tint="@color/colorDivider"
+                    app:srcCompat="@drawable/ic_apagar" />
+                <TextView
+                    android:id="@+id/txtApagar"
+                    android:text="Apagar"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="-2dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp"
+            android:layout_marginBottom="8dp"
+            android:paddingRight="16dp">
+
+            <TextView
+                android:id="@+id/sync_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="Clientes: "
+                android:textAlignment="center"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/sync_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:textAlignment="center"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/sync_progress_bar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="100"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:layout_marginBottom="8dp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/data_ult_sync"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:layout_marginBottom="8dp"
+            android:textColor="@android:color/white"
+            android:background="@color/colorTextSecondary"/>
+
+
+        <RelativeLayout
+            android:id="@+id/logLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            >
+
+            <!--  This is the main content -->
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:background="@drawable/frame"
+                android:orientation="vertical"
+                android:paddingTop="4dp"
+                >
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/messagesListRecyclerView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    tools:listitem="@layout/empresa_fragment_row" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:orientation="horizontal" >
+                >
+                <ImageView
+                    android:id="@+id/icon_pedidos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:paddingTop="1dp"
+                    android:paddingLeft="2dp"
+                    android:tint="@color/colorDivider"
+                    android:background="@android:color/white"
+                    app:srcCompat="@drawable/ic_pedido_identificacao" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"
+                    android:paddingTop="4dp"
+                    android:paddingRight="2dp"
+                    android:paddingBottom="2dp"
+                    android:text=" Log da sincronização "
+                    />
+            </LinearLayout>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</FrameLayout>
+

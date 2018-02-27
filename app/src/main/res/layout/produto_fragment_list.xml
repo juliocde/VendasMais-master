@@ -1,0 +1,28 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="br.com.dsx.vendamais.fragment.ProdutoFragmentList"
+    android:background="@android:color/white"
+    >
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/produtoListRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/produto_fragment_row"
+        />
+
+    <TextView
+        android:id="@+id/semProduto"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="16dp"
+        android:textSize="16sp"
+        android:text="Nenhum produto cadastrado." />
+
+</FrameLayout>
+
+
+

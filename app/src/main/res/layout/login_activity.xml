@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@mipmap/bg2"
+    android:gravity="bottom"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp">
+
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/login_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:visibility="gone"
+        />
+
+    <ImageView
+        android:id="@+id/vendaMaisIcon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="70dp"
+        app:srcCompat="@mipmap/login_icon" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        />
+
+    <RelativeLayout
+        android:id="@+id/formLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        >
+
+        <LinearLayout
+            android:id="@+id/formLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tela_login"
+            android:orientation="vertical">
+
+            <br.com.dsx.vendamais.component.MaskEditText
+                android:id="@+id/loginUsuario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="28dp"
+                android:layout_marginRight="28dp"
+                android:inputType="textEmailAddress"
+                android:hint="Email:"
+                android:imeOptions="actionNext"
+                app:met_floatingLabel="highlight"/>
+
+            <br.com.dsx.vendamais.component.MaskEditText
+                android:id="@+id/senhaUsuario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="28dp"
+                android:layout_marginRight="28dp"
+                android:inputType="textPassword"
+                android:hint="Senha:"
+                android:imeOptions="actionDone"
+                app:met_floatingLabel="highlight"
+                />
+
+            <GridLayout
+                android:id="@+id/loginGrid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@+id/senhaUsuario"
+                android:layout_gravity="left"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="28dp"
+                android:columnCount="2"
+                android:rowCount="1" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    >
+                    <android.support.v7.widget.AppCompatCheckBox
+                        android:id="@+id/checkboxRemember"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleX="0.70"
+                        android:scaleY="0.70"
+                        android:layout_marginTop="-6dp"
+                        android:layout_marginRight="-6dp"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left|top"
+                        android:text="Lembrar"
+                        android:textSize="12sp"
+                        />
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/esqueceuSenha"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|top"
+                    android:text="Esqueceu?"
+                    android:textSize="12sp"
+                    />
+            </GridLayout>
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/loginButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-22dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/formLayout"
+            android:tint="@color/colorDivider"
+            android:background="@drawable/circle_button_blue"
+            app:srcCompat="@drawable/ic_ok"
+            />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/socialButtom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="32dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+
+        <!-- Comentado para a primeira versao - depois liberar isso aqui.
+
+        <ImageButton
+            android:id="@+id/fbButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:tint="@android:color/white"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/circle_button"
+            app:srcCompat="@drawable/ic_facebook"
+            android:layout_marginRight="40dp"/>
+
+        <ImageButton
+            android:id="@+id/gplusButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:tint="@android:color/white"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/circle_button"
+            app:srcCompat="@drawable/ic_gplus" / -->
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/msgRegistrar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:paddingBottom="16dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:clickable="true"
+            android:gravity="bottom"
+            android:text="Não tem uma conta ainda?"
+            android:textSize="12dp"
+            style="@style/CustomEditText"
+            />
+        <TextView
+            android:id="@+id/cadastrarUsuario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:paddingLeft="16dp"
+            android:clickable="true"
+            android:gravity="bottom"
+            android:text="Registre-se"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            />
+    </LinearLayout>
+
+
+
+</LinearLayout>
+

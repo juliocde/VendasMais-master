@@ -1,0 +1,19 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="nav_header_vertical_spacing">16dp</dimen>
+    <dimen name="nav_header_height">160dp</dimen>
+    <dimen name="alinhar_comboBox">8dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">4dp</dimen>
+    <dimen name="activity_vertical_margin">4dp</dimen>
+    <dimen name="float_button">16dp</dimen>
+    <dimen name="padding_sides">36dp</dimen>
+
+    <dimen name="text_size">15sp</dimen> <!-- usado no p-->
+
+
+
+
+    <dimen name="inner_components_spacing">4dp</dimen>
+
+</resources>

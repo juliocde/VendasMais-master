@@ -1,0 +1,87 @@
+{
+  "project_info": {
+    "project_number": "547237963550",
+    "project_id": "firebase-venda-mais"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:547237963550:android:f580f8e0ad479565",
+        "android_client_info": {
+          "package_name": "br.com.vendamais"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "547237963550-s7gflnac9ke1d5b73hvt04262lke4j3e.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "br.com.vendamais",
+            "certificate_hash": "7dc8166eaf4382989094736bb0c648b67128d4b9"
+          }
+        },
+        {
+          "client_id": "547237963550-c7fbm1p5l2v0e48demm9jseens2slq79.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD4O1DugVSV2HYg6ZrRiITOBuXGoksVyf8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:547237963550:android:26934f6b0bf8a174",
+        "android_client_info": {
+          "package_name": "br.com.dsx.vendamais"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "547237963550-0b6264vkah1n0dgegr60sv59rtl1gqfi.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "br.com.dsx.vendamais",
+            "certificate_hash": "b7b83379dc43ca9d197bf4b004e2e92d90cb0502"
+          }
+        },
+        {
+          "client_id": "547237963550-c7fbm1p5l2v0e48demm9jseens2slq79.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD4O1DugVSV2HYg6ZrRiITOBuXGoksVyf8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
